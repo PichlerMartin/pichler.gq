@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="de">
     <header>
       <h1>Martin Pichler - Softwareentwickler</h1>
     </header>
@@ -160,7 +160,6 @@
     </ul>
 
     <h2>Interessen/Freizeitbeschäftigungen</h2>
-    <p>Literature, market studies, product tests, blood donor, hiking & running</p>
     <p>Literatur, Marktforschung, Produkttests, Blutspenden, Wandern & Laufen</p>
   </div>
 </template>
