@@ -1,5 +1,5 @@
 <template>
-  <div class="de">
+  <div class="Lebenslauf">
     <header>
       <h1>Martin Pichler - Softwareentwickler</h1>
     </header>
@@ -37,7 +37,7 @@
       </li>
       <li>
         Kenntnisse in der Backendentwicklung; Stack aufbauend auf Vue.js,
-        PHP/Laravel und JQuery; Erfahrung mit Node.js und Electron
+        PHP/Laravel und JQuery; Erfahrung mit NoDe.js und Electron
       </li>
     </ul>
     <h4>Datenbarchitektur</h4>
@@ -166,7 +166,7 @@
 
 <script>
 export default {
-  name: 'de',
+  name: 'Lebenslauf',
   props: {
   }
 }

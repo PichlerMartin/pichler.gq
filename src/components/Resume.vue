@@ -1,5 +1,5 @@
 <template>
-  <div class="en">
+  <div class="Resume">
     <header>
       <h1>Martin Pichler - software developer</h1>
     </header>
@@ -37,7 +37,7 @@
       </li>
       <li>
         Heavy focus on Backend development; Stack building on PHP/Laravel,
-        Vue.js and JQuery, experience with Node.js and Electron as well as React
+        Vue.js and JQuery, experience with NoDe.js and Electron as well as React
       </li>
     </ul>
     <h4>Data engineering</h4>
@@ -162,7 +162,7 @@
 
 <script>
 export default {
-  name: 'en',
+  name: 'Resume',
   props: {
   }
 }
