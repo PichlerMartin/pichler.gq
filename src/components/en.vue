@@ -32,9 +32,8 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'en',
   props: {
-    msg: String
   }
 }
 </script>
