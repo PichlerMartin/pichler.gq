@@ -1,17 +1,35 @@
 <template>
-  <div class="about">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oxygen"
-        rel="stylesheet"
-        type="text/css"
-    />
+  <div class="lebenslauf">
+    <div v-html="span('Hello world')" />
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Martin Lebenslauf</title>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Oxygen"
+          rel="stylesheet"
+          type="text/css"
+      />
+    </head>
+    <body>
     <header>
       <h1>Martin Pichler - Softwareentwickler</h1>
     </header>
     <h2>Wer bin ich?</h2>
     <ul>
       <li>
-        Ich bin 20,
+        Ich bin 20<script>
+        function calculate_age(birthdate) {
+          var diff_ms = Date.now() - birthdate.getTime();
+          var age_dt = new Date(diff_ms);
+
+          return Math.abs(age_dt.getUTCFullYear() - 1970);
+        }
+
+        document.write(calculate_age(new Date(2001, 4, 9)));</script>,
         Sie können mich erreichen unter +43 0664 5544628 oder mir mailen auf
         <a href="mailto:2001martin.pichler25@gmail.com">2001martin.pichler25@gmail.com</a>
       </li>
@@ -167,8 +185,37 @@
     <h2>Interessen/Freizeitbeschäftigungen</h2>
     <p>Literature, market studies, product tests, blood donor, hiking & running</p>
     <p>Literatur, Marktforschung, Produkttests, Blutspenden, Wandern & Laufen</p>
+    </body>
     <footer>
       <p id="imprint">Based on Raphaël Huchets <a href="https://www.raph.site/">raph.site</a></p>
     </footer>
+    </html>
   </div>
 </template>
+
+<style type="text/css">
+* {
+  font-family: "Oxygen", sans-serif;
+}
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #444;
+  padding: 0 10px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+h2 {
+  margin-top: 25px;
+}
+h4 > small {
+  margin-left: 10px;
+}
+</style>
