@@ -17,13 +17,8 @@ const routes = [
   },
   {
     path: '/de',
-    name: 'de',
-    component: () => import('../../index.html'),
-  },
-  {
-    path: '/en',
-    name: 'en',
-    component: () => import('../../en/index.html'),
+    name: 'Lebenslauf',
+    component: () => import(/* webpackChunkName: "about" */ '../views/de.vue')
   },
 ]
 
