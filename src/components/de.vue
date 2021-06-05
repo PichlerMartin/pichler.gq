@@ -168,7 +168,6 @@
 export default {
   name: 'de',
   props: {
-
   }
 }
 </script>

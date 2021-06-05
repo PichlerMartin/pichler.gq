@@ -170,18 +170,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+* {
+  font-family: "Oxygen", sans-serif;
+}
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #444;
+  padding: 0 10px;
+}
+
+h1,
+h2,
 h3 {
-  margin: 40px 0 0;
+  line-height: 1.2;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+h2 {
+  margin-top: 25px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+h4 > small {
+  margin-left: 10px;
 }
 </style>
