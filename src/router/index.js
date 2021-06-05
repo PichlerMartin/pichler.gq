@@ -10,12 +10,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/Lebenslauf',
+    path: '/de',
     name: 'Lebenslauf',
     component: Lebenslauf
   },
   {
-    path: '/Resume',
+    path: '/en',
     name: 'Resume',
     component: Resume
   }
