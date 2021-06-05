@@ -9,7 +9,7 @@
 import de from '@/components/de.vue'
 
 export default {
-  name: 'Home',
+  name: 'de',
   components: {
     de
   }
