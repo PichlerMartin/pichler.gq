@@ -1,5 +1,5 @@
 <template>
-  <div class="Lebenslauf">
+  <div class="lebenslaufcomponenet">
     <header>
       <h1>Martin Pichler - Softwareentwickler</h1>
     </header>

@@ -1,5 +1,5 @@
 <template>
-  <div class="Resume">
+  <div class="resumecomponent">
     <header>
       <h1>Martin Pichler - software developer</h1>
     </header>

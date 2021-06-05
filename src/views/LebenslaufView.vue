@@ -1,5 +1,5 @@
 <template>
-  <div class="lebenslauf">
+  <div class="lebenslaufview">
     <LebenslaufComponent/>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import LebenslaufComponent from '@/components/LebenslaufComponent.vue'
 
 export default {
-  name: 'LebenslaufComponent',
+  name: 'Lebenslaufview',
   components: {
     LebenslaufComponent
   }

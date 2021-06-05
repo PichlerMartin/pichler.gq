@@ -1,5 +1,5 @@
 <template>
-  <div class="Resume">
+  <div class="resumeview">
     <ResumeComponent/>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import ResumeComponent from '@/components/ResumeComponent.vue'
 
 export default {
-  name: 'ResumeComponent',
+  name: 'ResumeView',
   components: {
     ResumeComponent
   }
