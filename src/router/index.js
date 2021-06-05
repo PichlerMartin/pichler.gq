@@ -1,7 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import De from '/../views/de.html'
-import En from '/../views/en.html'
 
 const routes = [
   {
@@ -13,13 +11,13 @@ const routes = [
     path: '/de',
     mode: history,
     name: 'de',
-    component: { template: De }
+    component: import('/../views/de.html'),
   },
   {
     path: '/en',
     mode: history,
     name: 'en',
-    component: { template: En }
+    component: import('/../views/en.html'),
   }
 ]
 
