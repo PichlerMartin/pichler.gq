@@ -162,7 +162,7 @@
 
 <script>
 export default {
-  name: 'Resume',
+  name: 'ResumeComponent',
   props: {
   }
 }

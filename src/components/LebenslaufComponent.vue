@@ -166,7 +166,7 @@
 
 <script>
 export default {
-  name: 'Lebenslauf',
+  name: 'LebenslaufComponent',
   props: {
   }
 }
