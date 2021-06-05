@@ -21,15 +21,7 @@
     <h2>Wer bin ich?</h2>
     <ul>
       <li>
-        Ich bin 20<script>
-        function calculate_age(birthdate) {
-          var diff_ms = Date.now() - birthdate.getTime();
-          var age_dt = new Date(diff_ms);
-
-          return Math.abs(age_dt.getUTCFullYear() - 1970);
-        }
-
-        document.write(calculate_age(new Date(2001, 4, 9)));</script>,
+        Ich bin 20,
         Sie können mich erreichen unter +43 0664 5544628 oder mir mailen auf
         <a href="mailto:2001martin.pichler25@gmail.com">2001martin.pichler25@gmail.com</a>
       </li>
