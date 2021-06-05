@@ -1,6 +1,6 @@
 <template>
   <div class="lebenslauf">
-    <div v-html="span('Hello world')" />
+    <span v-html="rawHtml">
     <!DOCTYPE html>
     <html lang="de">
     <head>
@@ -190,6 +190,7 @@
       <p id="imprint">Based on Raphaël Huchets <a href="https://www.raph.site/">raph.site</a></p>
     </footer>
     </html>
+    </span>
   </div>
 </template>
 
