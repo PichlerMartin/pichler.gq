@@ -12,13 +12,13 @@ const routes = [
   {
     path: '/de',
     mode: history,
-    name: 'de',
+    name: 'De',
     component: De
   },
   {
     path: '/en',
     mode: history,
-    name: 'en',
+    name: 'En',
     component: En
   }
 ]
