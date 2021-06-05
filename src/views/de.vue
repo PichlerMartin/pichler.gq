@@ -5,34 +5,6 @@
         rel="stylesheet"
         type="text/css"
     />
-    <style type="text/css">
-      * {
-        font-family: "Oxygen", sans-serif;
-      }
-
-      body {
-        margin: 40px auto;
-        max-width: 650px;
-        line-height: 1.7;
-        font-size: 14px;
-        color: #444;
-        padding: 0 10px;
-      }
-
-      h1,
-      h2,
-      h3 {
-        line-height: 1.2;
-      }
-      h2 {
-        margin-top: 25px;
-      }
-      h4 > small {
-        margin-left: 10px;
-      }
-    </style>
-
-    <body>
     <header>
       <h1>Martin Pichler - Softwareentwickler</h1>
     </header>
@@ -203,7 +175,6 @@
     <h2>Interessen/Freizeitbeschäftigungen</h2>
     <p>Literature, market studies, product tests, blood donor, hiking & running</p>
     <p>Literatur, Marktforschung, Produkttests, Blutspenden, Wandern & Laufen</p>
-    </body>
     <footer>
       <p id="imprint">Based on Raphaël Huchets <a href="https://www.raph.site/">raph.site</a></p>
     </footer>
