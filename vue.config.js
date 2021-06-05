@@ -1,9 +1,9 @@
 module.exports = {
-  test: /\.(html)$/,
-  use: {
-    loader: "html-loader",
-    options: {
-      attrs: [":data-src"]
-    }
+  chainWebpack: config => {
+    config.module
+        .rule('html')
+        .test(/\.html$/)
+        .use('html-loader')
+        .loader('html-loader')
   }
 }
