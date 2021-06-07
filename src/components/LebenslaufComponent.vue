@@ -6,12 +6,12 @@
     <h2>Wer bin ich?</h2>
     <ul>
       <li>
-        Ich bin 20,
+        Ich bin {{ calculateAge() }},
         Sie können mich erreichen unter +43 0664 5544628 oder mir mailen auf
         <a href="mailto:2001martin.pichler25@gmail.com">2001martin.pichler25@gmail.com</a>
       </li>
       <li>
-        Ich lebe s
+        Ich lebe
         <a href="https://www.openstreetmap.org/#map=11/48.2951/14.3275"
         >hier</a
         >, ich besitze einen Führerschein für Autos, Motorräder und LKWs (C95)
@@ -23,7 +23,7 @@
     <ul>
       <li>
         Mehrjährige Erfahrung in der Objektorientierten Programmierung mit C# und Java,
-        dem .NET-Framework, weiters Kenntnisse zu Java Beans - <strong>Xp: 3 jahre</strong>
+        dem .NET-Framework, weiters Kenntnisse zu Java Beans - <strong>Xp: 3 Jahre</strong>
       </li>
       <li>
         Projektkenntnisse in der Erstellung von performanten Algorithmen und grundlegende
@@ -65,7 +65,7 @@
     <h2>Berufserfahrung</h2>
     <h4>
       Software dev @ <a href="https://www.enjoyit.at/">enjoy IT GmbH</a>
-      <small>Seit Februar 2021</small>
+      <small> Seit Februar 2021</small>
     </h4>
     <ul>
       <li>
@@ -77,12 +77,12 @@
 
     <h4>
       Triage-Ferialjob beim Ordensklinikum Linz Barmherzige Schwestern
-      <small>Sommer 2020</small>
+      <small> Sommer 2020</small>
     </h4>
 
     <h4>
       Software-Entwickler Java @ <a href="https://www.keba.com/">KEBA AG</a>
-      <small>Sommer 2019</small>
+      <small> Sommer 2019</small>
     </h4>
     <ul>
       <li>
@@ -95,7 +95,7 @@
 
     <h4>
       Software-Entwickler Java @ <a href="https://www.mic-cust.com/">MIC Datenverarbeitung</a>
-      <small>Sommer 2018</small>
+      <small> Sommer 2018</small>
     </h4>
     <ul>
       <li>
@@ -108,7 +108,7 @@
 
     <h4>
       2x Berufspraktikum @ <a href="https://www.agrana.com/">Agrana Stärke GmbH, Werk Aschach</a>
-      <small>Summer 2016/2017</small>
+      <small> Sommer 2016/2017</small>
     </h4>
     <ul>
       <li>
@@ -167,35 +167,12 @@
 <script>
 export default {
   name: 'LebenslaufComponent',
-  props: {
+  methods: {
+    calculateAge: function () {
+      var ageDifMs = Date.now() - (new Date("09.04.2001")).getTime();
+      var ageDate = new Date(ageDifMs); // miliseconds from epoch
+      return Math.abs(ageDate.getUTCFullYear() - 1969)
+    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-* {
-  font-family: "Oxygen", sans-serif;
-}
-
-body {
-  margin: 40px auto;
-  max-width: 650px;
-  line-height: 1.7;
-  font-size: 14px;
-  color: #444;
-  padding: 0 10px;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
-h2 {
-  margin-top: 25px;
-}
-h4 > small {
-  margin-left: 10px;
-}
-</style>

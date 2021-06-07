@@ -6,7 +6,7 @@
     <h2>Who am I?</h2>
     <ul>
       <li>
-        I am 20,
+        I am {{ calculateAge() }},
         you can phone me on +43 0664 5544628 or send me a mail at
         <a href="mailto:2001martin.pichler25@gmail.com">2001martin.pichler25@gmail.com</a>
       </li>
@@ -65,7 +65,7 @@
     <h2>Employment history</h2>
     <h4>
       Software dev @ <a href="https://www.enjoyit.at/">enjoy IT GmbH</a>
-      <small>Since february 2021</small>
+      <small> Since february 2021</small>
     </h4>
     <ul>
       <li>Building functional laravel websites in a dynamic team</li>
@@ -73,12 +73,12 @@
 
     <h4>
       Triage-Nurse at Ordensklinikum Linz Barmherzige Schwestern, Covid-19 crisis
-      <small>Summer 2020</small>
+      <small> Summer 2020</small>
     </h4>
 
     <h4>
       Software dev intern @ <a href="https://www.keba.com/">KEBA AG</a>
-      <small>Summer 2019</small>
+      <small> Summer 2019</small>
     </h4>
     <ul>
       <li>
@@ -91,7 +91,7 @@
 
     <h4>
       Software dev intern @ <a href="https://www.mic-cust.com/">MIC Datenverarbeitung</a>
-      <small>Summer 2018</small>
+      <small> Summer 2018</small>
     </h4>
     <ul>
       <li>
@@ -104,7 +104,7 @@
 
     <h4>
       IT and logistics apprentice @ <a href="https://www.agrana.com/">Agrana Stärke GmbH, Plant Aschach</a>
-      <small>Summer 2016/2017</small>
+      <small> Summer 2016/2017</small>
     </h4>
     <ul>
       <li>
@@ -124,7 +124,7 @@
         >
           diploma thesis
         </a>
-        involving File-Sharing and via Peer-2-Peer networks/BitTorrent
+        involving File-Sharing via Peer-2-Peer networks/BitTorrent
       </li>
       <li>
         worked on
@@ -163,35 +163,12 @@
 <script>
 export default {
   name: 'ResumeComponent',
-  props: {
+  methods: {
+    calculateAge: function () {
+      var ageDifMs = Date.now() - (new Date("09.04.2001")).getTime();
+      var ageDate = new Date(ageDifMs); // miliseconds from epoch
+      return Math.abs(ageDate.getUTCFullYear() - 1969)
+    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-* {
-  font-family: "Oxygen", sans-serif;
-}
-
-body {
-  margin: 40px auto;
-  max-width: 650px;
-  line-height: 1.7;
-  font-size: 14px;
-  color: #444;
-  padding: 0 10px;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
-h2 {
-  margin-top: 25px;
-}
-h4 > small {
-  margin-left: 10px;
-}
-</style>
