@@ -9,12 +9,20 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
+:root {
+  --bg-color-light:#007CC7;
+  --bg-color-dark:#12232E;
+  --font:#EEFBFB;
+  --link:#D1C9BA;
+  --grey:#203647;
+}
+
 body {
-  background-color: #DACA56;
+  background-color: var(--bg-color-light);
 }
 
 #nav{
-  background-color: #9ACD32;
+  background-color: var(--bg-color-light);
 }
 
 #app {
@@ -22,34 +30,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--font);
 }
 
 .resumecomponent, .lebenslaufcomponenet {
   position: relative;
   padding: 20px;
   margin: 10px auto;
-  background-color: #9ACD32;
-  border: 20px solid #403E39;
+  background-color: var(--bg-color-light);
+  border: 20px solid var(--grey);
   text-align: left;
   max-width: 800px;
 }
 
 #nav {
   padding: 20px;
-  border: 20px solid #403E39;
+  border: 20px solid var(--grey);
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: var(--grey);
 }
 
 #nav a.router-link-exact-active {
-  color: #7D5D44;
+  color: var(--link);
 }
 
 a {
-  color: #7D5D44;
+  color: var(--link);
 }
 </style>
