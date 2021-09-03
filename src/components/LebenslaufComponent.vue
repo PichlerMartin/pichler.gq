@@ -166,6 +166,7 @@
 
 <script>
 export default {
+  title: 'Martin Pichler',
   name: 'LebenslaufComponent',
   methods: {
     calculateAge: function () {

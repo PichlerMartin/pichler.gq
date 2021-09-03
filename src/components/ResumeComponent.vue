@@ -162,6 +162,7 @@
 
 <script>
 export default {
+  title: 'Martin Pichler',
   name: 'ResumeComponent',
   methods: {
     calculateAge: function () {
