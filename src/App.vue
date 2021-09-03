@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/">Lebenslauf</router-link> |
+    <router-link to="/">Lebenslaufs</router-link> |
     <router-link to="/en">Resume</router-link>
   </div>
   <router-view/>
