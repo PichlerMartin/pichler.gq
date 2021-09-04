@@ -1,5 +1,5 @@
 import {createApp} from 'vue'
-import App from './App.vue'
+import App from './pages/App'
 import router from './router'
 import titleMixin from './mixins/titleMixin'
 

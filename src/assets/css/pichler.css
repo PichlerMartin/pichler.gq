@@ -1,0 +1,46 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --bg-color-light: #000;
+    --bg-color-dark: #000;
+    --link: yellow;
+}
+
+#app {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav {
+    border: none;
+    border-bottom: solid #262626 1px;
+    background: #131313;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s;
+    border-bottom: solid transparent 2px;
+    color: yellow;
+}
+
+#nav a {
+    color: inherit;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a.router-link-active {
+    border-bottom: solid white 2px;
+}
+
+.lebenslaufcomponenet, .resumecomponent {
+    border: none;
+}

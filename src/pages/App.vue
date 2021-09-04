@@ -3,10 +3,12 @@
     <router-link to="/">Lebenslaufs</router-link> |
     <router-link to="/en">Resume</router-link>
   </div>
+
   <router-view/>
 </template>
 
 <style>
+@import url('../assets/css/pichler.css');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 :root {
